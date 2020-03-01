@@ -1,0 +1,15 @@
+        <footer>
+            {{ if .Site.Menus.icon }}
+                <ul class="nav navbar-nav-center">
+                    {{ range sort .Site.Menus.icon }}
+                        <li class="navbar-icon"><a href="{{ cond (eq .URL .Name)  $.Site.Params.emailurl .URL}}"><i class="fa fa-{{ .Name }}"></i></a></li>
+                    {{ end }}
+                </ul>
+            {{ end }}
+            <p class="copyright text-muted">{{ printf .Site.Params.copyright (now.Format "2006") | markdownify }}</p>
+        </footer>
+
+        {{ partial "body-close" . }}
+    </body>
+
+</html>
