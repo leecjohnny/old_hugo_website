@@ -1,4 +1,4 @@
 # Johnny's personal website
-My personal website www.johnnyclee.com
+Archive of hugo repo for my personal website www.johnnyclee.com
 
 Using [hugo](https://gohugo.io/)
